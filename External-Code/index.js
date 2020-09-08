@@ -16,7 +16,7 @@ function runUsernameChecker() {
   // To Change The Welcome Message, Please Change The Value Of The Variable Below
   welcomeMessage = "Welcome " + username + "!";
 
-  usernameLength = username.length;
+  let usernameLength = username.length;
 
   // This Is The Valid Username Checker
   // This Section Checks For Invalid Characters And Spaces
@@ -36,9 +36,9 @@ function runUsernameChecker() {
     // Changes The Username Value To null
     username = "null";
 
-  } else if (username.includes("@") {
+  } else if (username.includes("@")) {
 
-      alert("Your username is invalid. You can only have a username without any address signs(@) in it. Please try again.")
+      alert("Your username is invalid. You can only have a username without any address signs(@) in it. Please try again.");
 
       // Changes The Username Value To null
       username = "null";
@@ -189,5 +189,3 @@ function runUsernameChecker() {
     }
 
   }
-
-  runUsernameChecker();
