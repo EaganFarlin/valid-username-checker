@@ -4,13 +4,12 @@ h1 {
 
 .btncontainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 600px;
   position: relative;
   top: 114px;
-  left: -25px;
+  left: 186px;
 }
-
 input {
   padding: 20px;
   margin-bottom: 30px;
