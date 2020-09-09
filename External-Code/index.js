@@ -10,7 +10,7 @@ $(document).ready(function(){
    
       let str = $("#myInput").val();
       let strLength = str.length;
-      alert(strLength);
+      
   
 // Adds A Initial Null Value To The Username
       let resetValue = $("#myInput").val("");
