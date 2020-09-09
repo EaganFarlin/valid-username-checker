@@ -10,6 +10,26 @@ body {
   height: 100vh;
 }
 
+input, select, textarea{
+  color:  rgb(2, 61, 53);;
+  font-size:1.3rem;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-weight: bolder;
+}
+
+textarea:focus, input:focus {
+  color:  rgb(2, 61, 53);;
+}
+
+input[type="text"]::placeholder  {
+  transition: opacity 0.3s linear; 
+  color: white;
+}
+
+input[type="text"]:focus::placeholder  {
+  opacity: 0;
+}
+
 h1 {
   position: relative;
   top: 130px;
@@ -17,6 +37,7 @@ h1 {
   font-family: 'Baloo Bhaina 2', cursive;
   font-size: 2.5rem;
   color: rgb(2, 61, 53);
+  font-weight: bold;
 }
 
 .btn {
@@ -53,7 +74,7 @@ h1 {
   left: 46px;
 }
 
-i {
+.fa-pencil-square {
   /* visibility: hidden; */
   font-size: 32px;
   position: relative;
@@ -61,6 +82,25 @@ i {
   right: 12px;
   opacity: 0.4;
 }
+
+  .fa-hand-o-right {
+    animation: clickhere 2s linear infinite;
+    font-size: 36px;
+    position: relative;
+    top: 21px;
+    /* bottom: 15px; */
+    right: 8px;
+}
+
+@keyframes clickhere {
+  
+  50% {
+    
+    position: relative;
+    right: 30px;
+  }
+}
+
 
 .container1 {
   height: 30vh;
@@ -74,7 +114,7 @@ i {
 
 input {
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   margin-top: 30px;
   width: 600px;
   background-color: rgba(44, 37, 37, 0.6);
@@ -82,9 +122,32 @@ input {
   border: none;
 }
 
-::placeholder {
-  color: white;
-  opacity: 1;
+
+.btn1 {
+  outline: none;
+  border: none;
+  background-color: rgba(44, 37, 37, 0.6);
+  padding: 8px;
+  border-radius: 12px;
+  position: relative;
+  left: 40%;
+}
+.btn1:hover {
+  background-color: rgba(59, 59, 59, 0.8);
+  outline: none;
+  border: none;
+  
+}
+.submittext:hover{
+  color:  rgb(255, 255, 255);
+  outline: none;
 }
 
-;
+.submittext {
+  font-size: 1.2rem;
+  font-family: 'Baloo Bhaina 2', cursive;
+  color:  rgb(194, 199, 198);
+  font-weight: bold;
+  outline: none;
+}
+
