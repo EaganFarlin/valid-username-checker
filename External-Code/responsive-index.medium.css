@@ -1,17 +1,24 @@
+* {
+
+  overflow: hidden;
+}
+.container1 {
+height: 50vh;
+top: 25px;
+}
 h1 {
     font-size: 1.8rem;
-    top:110px;
+    top:60px;
   }
   
   .btncontainer {
     display: flex;
     justify-content: center;
-
     width: 600px;
     position: relative;
-    top: 114px;
-    left: 120px;
-  }
+    top: 56px;
+    left: -33px;
+}
   input {
     padding: 20px;
     margin-bottom: 30px;
@@ -23,7 +30,14 @@ h1 {
     border: none;
   }
   
-  body {
-    overflow: hidden;
-  }
   
+  
+  .inputdiv {
+    
+    position: relative;
+    right: 67px;
+    height: 48vh;
+}
+.btn1 {
+  margin-left: 66px;
+}
