@@ -1,0 +1,29 @@
+h1 {
+    font-size: 1.8rem;
+    top:80px;
+  }
+  
+  .btncontainer {
+    display: flex;
+    justify-content: center;
+
+    width: 600px;
+    position: relative;
+    top: 80px;
+    left: 80px;
+  }
+  input {
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 2px;
+    margin-left: 158px;
+    max-width: 280px;
+    background-color: rgba(44, 37, 37, 0.6);
+    outline: none;
+    border: none;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
