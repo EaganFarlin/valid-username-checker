@@ -1,3 +1,10 @@
+
+function fde(){
+  $("h1").fadeOut().fadeIn(1000);
+
+}
+fde()
+
 // To Change The Minimum Length Of A Username, Change The Number In This Variable
 let minimumUsernameLength = 3;
 
@@ -10,7 +17,7 @@ $(document).ready(function(){
    
       let str = $("#myInput").val();
       let strLength = str.length;
-      
+      // alert(strLength);
   
 // Adds A Initial Null Value To The Username
       let resetValue = $("#myInput").val("");
@@ -26,6 +33,13 @@ $(document).ready(function(){
     resetValue
 
     // Checks For Any Grave Accents(`) Within The Username
+  } else if (str.length===0) {
+
+    alert("You must enter a username to continue. Please try again.");
+
+    // Changes The Username Value To null
+    resetValue
+
   } else if (str.includes("`")) {
 
         alert("Your username is invalid. You can only have a username without any grave accents(`) in it. Please try again.");
@@ -184,3 +198,9 @@ $(document).ready(function(){
   }
   });
 });
+
+
+
+
+
+ 
